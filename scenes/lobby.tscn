@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 [gd_scene load_steps=10 format=3 uid="uid://dklmbvw6nnhcy"]
 
 [ext_resource type="Texture2D" path="res://sprites/GRASS+.png" id="1_t3gnv"]
 [ext_resource type="Script" path="res://scenes/lobby.gd" id="1_xq3s8"]
 [ext_resource type="Texture2D" path="res://sprites/tilemap_packed.png" id="2_f42dt"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://desftubgw5fwf"]
+
+[ext_resource type="Texture2D" uid="uid://cp2rc57vhg2ab" path="res://sprites/GRASS+.png" id="1_t3gnv"]
+[ext_resource type="Script" path="res://scenes/lobby.gd" id="1_xq3s8"]
+[ext_resource type="Texture2D" uid="uid://crbfetg68xs27" path="res://sprites/tilemap_packed.png" id="2_f42dt"]
+>>>>>>> lobby
 [ext_resource type="PackedScene" uid="uid://bxdi762amta2s" path="res://characters/player.tscn" id="2_pjwbl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1s3ie"]

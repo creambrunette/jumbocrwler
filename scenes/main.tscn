@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=2 format=3 uid="uid://dyjo33240ixjj"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://de3qjldsi8kge"]
+>>>>>>> lobby
 
 [sub_resource type="GDScript" id="GDScript_sqe5s"]
 script/source = "extends Node2D
