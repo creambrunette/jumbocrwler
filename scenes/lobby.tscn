@@ -7,7 +7,6 @@
 [sub_resource type="GDScript" id="GDScript_5lraq"]
 script/source = "extends Node2D
 
-
 func _on_dungeon_en_body_entered(body):
 	if body.name == \"player\":
 		get_tree().quit()
@@ -822,5 +821,9 @@ position = Vector2(491, 284)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dungeonEn"]
 position = Vector2(708, -20)
 shape = SubResource("RectangleShape2D_lwden")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.95
+blend_mode = 1
 
 [connection signal="body_entered" from="dungeonEn" to="." method="_on_dungeon_en_body_entered"]

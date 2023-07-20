@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bxdi762amta2s"]
+[gd_scene load_steps=13 format=3 uid="uid://bxdi762amta2s"]
 
 [ext_resource type="Script" path="res://characters/player.gd" id="1_gafmu"]
 [ext_resource type="Texture2D" uid="uid://guut7w3e4nl5" path="res://sprites/schienajumbofatta.png" id="2_k17hj"]
@@ -194,6 +194,15 @@ _data = {
 "side": SubResource("Animation_gb5p2")
 }
 
+[sub_resource type="Gradient" id="Gradient_6cc4u"]
+offsets = PackedFloat32Array(0.00242439, 0.699394)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wc4ji"]
+gradient = SubResource("Gradient_6cc4u")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_gafmu")
 
@@ -215,3 +224,9 @@ animation = &"side"
 libraries = {
 "": SubResource("AnimationLibrary_8q6n4")
 }
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+scale = Vector2(2.01563, 2.01563)
+color = Color(0.807843, 0.807843, 0.219608, 1)
+energy = 1.8
+texture = SubResource("GradientTexture2D_wc4ji")
